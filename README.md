@@ -1,80 +1,87 @@
-#Spam Mail Detector using Machine Learning
+📧 Spam Mail Detector using Machine Learning
 
-##Overview
-
-The Spam Mail Detector is a Machine Learning project developed using Python and Scikit-learn to classify SMS messages as Spam or Ham (Not Spam). The project uses Natural Language Processing (NLP) techniques for text preprocessing and TF-IDF Vectorization for feature extraction. Two machine learning algorithms—Multinomial Naive Bayes and Logistic Regression—are trained and evaluated to classify messages accurately.
+A Machine Learning project that classifies SMS messages as Spam or Ham (Not Spam) using Natural Language Processing (NLP) and supervised machine learning techniques. The project leverages TF-IDF Vectorization for feature extraction and compares the performance of Multinomial Naive Bayes and Logistic Regression classifiers.
 
 ---
 
-##Features
+🚀 Project Overview
 
-- Load and explore the SMS Spam dataset
+Spam messages are a common problem in digital communication. This project demonstrates how Machine Learning can automatically identify unwanted SMS messages by learning patterns from labeled data.
+
+The model is trained on the UCI SMS Spam Collection Dataset and follows a complete machine learning workflow—from data preprocessing to model evaluation and prediction.
+
+---
+
+✨ Features
+
+- Data loading and exploration
 - Text preprocessing using NLTK
   - Lowercasing
   - Tokenization
   - Stopword removal
-- TF-IDF Vectorization
-- Train and test machine learning models
+- Feature extraction using TF-IDF Vectorizer
 - Spam/Ham message classification
+- Model training with:
+  - Multinomial Naive Bayes
+  - Logistic Regression
 - Performance evaluation using:
   - Accuracy
   - Precision
   - Recall
   - F1-Score
   - Confusion Matrix
-- Predict custom SMS messages
+- Custom SMS prediction
 
 ---
 
-##Technologies Used
+🛠️ Technologies Used
 
 - Python
 - Jupyter Notebook
 - Pandas
 - NumPy
-- Matplotlib
-- Seaborn
 - NLTK
 - Scikit-learn
+- Matplotlib
+- Seaborn
 
 ---
 
-##Machine Learning Algorithms
+🤖 Machine Learning Models
 
 - Multinomial Naive Bayes
 - Logistic Regression
 
 ---
 
-##Dataset
+📂 Dataset
 
 UCI SMS Spam Collection Dataset
 
 - Total Messages: 5,572
-- Classes:
-  - Ham (Legitimate Messages)
-  - Spam (Unwanted Messages)
+- Categories:
+  - Ham – Legitimate Messages
+  - Spam – Unwanted Promotional Messages
 
 ---
 
-##Project Workflow
+📊 Project Workflow
 
-1. Import Libraries
-2. Load Dataset
-3. Explore Dataset
-4. Handle Missing Values
-5. Visualize Dataset
-6. Preprocess Text using NLTK
-7. Convert Text into Numerical Features using TF-IDF
-8. Split Dataset into Training and Testing Sets
-9. Train Naive Bayes Model
-10. Train Logistic Regression Model
-11. Evaluate Model Performance
-12. Predict Custom Messages
+1. Import required libraries
+2. Load the dataset
+3. Explore and inspect the data
+4. Preprocess text using NLTK
+5. Convert text into numerical features using TF-IDF
+6. Split the dataset into training and testing sets
+7. Train the machine learning models
+8. Evaluate model performance
+9. Predict whether a custom message is Spam or Ham
 
 ---
 
-##Evaluation Metrics
+📈 Evaluation Metrics
+
+The models are evaluated using:
 
 - Accuracy Score
 - Precision
@@ -85,7 +92,7 @@ UCI SMS Spam Collection Dataset
 
 ---
 
-##Project Structure
+📁 Project Structure
 
 Spam-Mail-Detector-ML/
 │
@@ -98,17 +105,17 @@ Spam-Mail-Detector-ML/
 
 ---
 
-##Installation
+⚙️ Installation
 
 Clone the repository:
 
-git clone https://github.com/your-username/spam-mail-detector-ml.git
+git clone https://github.com/<your-github-username>/spam-mail-detector-ml.git
 
-Navigate to the project folder:
+Move to the project directory:
 
 cd spam-mail-detector-ml
 
-Install the required libraries:
+Install the required dependencies:
 
 pip install -r requirements.txt
 
@@ -118,17 +125,17 @@ jupyter notebook
 
 ---
 
-Future Improvements
+🔮 Future Enhancements
 
-- Develop a web application using Flask or Streamlit
-- Deploy the model for real-time spam detection
-- Extend the project for email spam classification
-- Improve performance using advanced NLP and deep learning models
+- Build a web application using Flask or Streamlit
+- Deploy the trained model online
+- Improve performance with advanced NLP techniques
+- Extend support for email spam detection
 
 ---
 
-Author
+👨‍💻 Author
 
 Mayank Khare
 
-B.Tech Student | Machine Learning Enthusiast
+B.Tech Student | Python & Machine Learning Enthusiast
