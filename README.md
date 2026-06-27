@@ -88,8 +88,8 @@ Spam-Mail-Detector-ML/
 ├── SMSSpamCollection
 ├── README.md
 ├── requirements.txt
+├── LICENSE
 └── .gitignore
-```
 
 ---
 
