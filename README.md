@@ -1,31 +1,32 @@
-# Spam Mail Detector using Machine Learning
+#Spam Mail Detector using Machine Learning
 
-## Overview
+##Overview
 
-This project is a Machine Learning-based Spam Mail Detector that classifies SMS messages as **Spam** or **Ham (Not Spam)**. It uses Natural Language Processing (NLP) techniques to preprocess text and applies machine learning algorithms for classification.
-
-The project is implemented in **Python** using **Jupyter Notebook** and trained on the **UCI SMS Spam Collection Dataset**.
+The Spam Mail Detector is a Machine Learning project developed using Python and Scikit-learn to classify SMS messages as Spam or Ham (Not Spam). The project uses Natural Language Processing (NLP) techniques for text preprocessing and TF-IDF Vectorization for feature extraction. Two machine learning algorithms—Multinomial Naive Bayes and Logistic Regression—are trained and evaluated to classify messages accurately.
 
 ---
 
-## Features
+##Features
 
-- Text preprocessing
+- Load and explore the SMS Spam dataset
+- Text preprocessing using NLTK
   - Lowercasing
   - Tokenization
   - Stopword removal
 - TF-IDF Vectorization
-- Spam/Ham classification
-- Naive Bayes Classifier
-- Logistic Regression Classifier
-- Model performance evaluation
-- Confusion Matrix
-- Classification Report
-- Custom message prediction
+- Train and test machine learning models
+- Spam/Ham message classification
+- Performance evaluation using:
+  - Accuracy
+  - Precision
+  - Recall
+  - F1-Score
+  - Confusion Matrix
+- Predict custom SMS messages
 
 ---
 
-## Technologies Used
+##Technologies Used
 
 - Python
 - Jupyter Notebook
@@ -38,50 +39,54 @@ The project is implemented in **Python** using **Jupyter Notebook** and trained 
 
 ---
 
-## Machine Learning Algorithms
+##Machine Learning Algorithms
 
 - Multinomial Naive Bayes
 - Logistic Regression
 
 ---
 
-## Dataset
+##Dataset
 
-**Dataset:** UCI SMS Spam Collection Dataset
+UCI SMS Spam Collection Dataset
 
-It contains over **5,500 SMS messages** labeled as:
-- Spam
-- Ham
-
----
-
-## Project Workflow
-
-1. Load Dataset
-2. Data Exploration
-3. Text Preprocessing
-4. Feature Extraction using TF-IDF
-5. Train-Test Split
-6. Model Training
-7. Prediction
-8. Performance Evaluation
-9. Custom Spam Detection
+- Total Messages: 5,572
+- Classes:
+  - Ham (Legitimate Messages)
+  - Spam (Unwanted Messages)
 
 ---
 
-## Evaluation Metrics
+##Project Workflow
 
-- Accuracy
+1. Import Libraries
+2. Load Dataset
+3. Explore Dataset
+4. Handle Missing Values
+5. Visualize Dataset
+6. Preprocess Text using NLTK
+7. Convert Text into Numerical Features using TF-IDF
+8. Split Dataset into Training and Testing Sets
+9. Train Naive Bayes Model
+10. Train Logistic Regression Model
+11. Evaluate Model Performance
+12. Predict Custom Messages
+
+---
+
+##Evaluation Metrics
+
+- Accuracy Score
 - Precision
 - Recall
 - F1-Score
 - Confusion Matrix
+- Classification Report
 
 ---
 
-## Project Structure
+##Project Structure
 
-```
 Spam-Mail-Detector-ML/
 │
 ├── Spam_Mail_Detector.ipynb
@@ -93,39 +98,37 @@ Spam-Mail-Detector-ML/
 
 ---
 
-## Installation
+##Installation
 
 Clone the repository:
 
-```bash
-git clone https://github.com/Mayank004-ux/Spam_Mail_Detector
-```
+git clone https://github.com/your-username/spam-mail-detector-ml.git
+
+Navigate to the project folder:
+
+cd spam-mail-detector-ml
 
 Install the required libraries:
 
-```bash
 pip install -r requirements.txt
-```
 
-Run the Jupyter Notebook:
+Launch Jupyter Notebook:
 
-```bash
 jupyter notebook
-```
 
 ---
 
-## Future Improvements
+Future Improvements
 
-- Build a web application using Flask or Streamlit
-- Deploy the model online
-- Support email spam detection
-- Improve accuracy using advanced NLP models
+- Develop a web application using Flask or Streamlit
+- Deploy the model for real-time spam detection
+- Extend the project for email spam classification
+- Improve performance using advanced NLP and deep learning models
 
 ---
 
-## Author
+Author
 
-**Mayank Khare**
+Mayank Khare
 
 B.Tech Student | Machine Learning Enthusiast
