@@ -98,7 +98,7 @@ Spam-Mail-Detector-ML/
 Clone the repository:
 
 ```bash
-git clone https://github.com/Mayank004-ux/spam-mail-detector-ml.git
+git clone https://github.com/Mayank004-ux/Spam_Mail_Detector
 ```
 
 Install the required libraries:
